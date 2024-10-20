@@ -1,0 +1,10 @@
+CREATE DATABASE salary;
+USE salary;
+
+CREATE TABLE emp(
+	id INT PRIMARY KEY,
+    sal INT DEFAULT(50000)
+);
+INSERT INTO emp (id) VALUES (101);
+
+SELECT * FROM emp;
