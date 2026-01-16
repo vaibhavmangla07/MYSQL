@@ -76,7 +76,7 @@ FROM employee;
 
 
 -- --------------------------
--- VALUE / OFFSET FUNCTIONS
+-- 3. VALUE / OFFSET FUNCTIONS
 -- --------------------------
 
 -- LAG()
@@ -101,10 +101,9 @@ SELECT *,
 FROM employee;
 
 
--- -----------------------------
--- FRAME-BASED WINDOW FUNCTION
--- MOVING AVERAGE
--- -----------------------------
+-- ------------------------------------------------
+-- 4. FRAME-BASED WINDOW FUNCTION (MOVING AVERAGE)
+-- ------------------------------------------------
 SELECT *,
        AVG(salary) OVER (
            ORDER BY salary
